@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="150" viewBox="0 0 400 150">
+  <style>
+    .title { fill: #333; font-family: Arial, sans-serif; font-size: 36px; font-weight: bold; }
+    .subtitle { fill: #666; font-family: Arial, sans-serif; font-size: 16px; }
+    .bg { fill: #f5f5f5; }
+    .accent { fill: #4a86e8; }
+  </style>
+  <rect width="400" height="150" rx="10" class="bg" />
+  <rect x="0" y="135" width="400" height="15" class="accent" />
+  <text x="50%" y="60" text-anchor="middle" class="title">AETHERMIND</text>
+  <text x="50%" y="90" text-anchor="middle" class="subtitle">Decentralized Cognitive Network</text>
+</svg> 

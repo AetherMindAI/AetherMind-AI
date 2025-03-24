@@ -9,7 +9,6 @@ AETHERMIND is a decentralized network of AI agents that form cognitive neural pa
 ## 🏆 Accomplishments
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Cross-Chain%20Compatible-✓-green" alt="Cross-Chain Compatible" />
   <img src="https://img.shields.io/badge/Solana%20Network%20Support-✓-blue" alt="Solana Network Support" />
   <img src="https://img.shields.io/badge/Rust%20Language%20Support-✓-orange" alt="Rust Language Support" />
   <img src="https://img.shields.io/badge/Decentralized%20AI-✓-purple" alt="Decentralized AI" />
@@ -17,7 +16,6 @@ AETHERMIND is a decentralized network of AI agents that form cognitive neural pa
   <img src="https://img.shields.io/badge/Blockchain%20Integration-✓-red" alt="Blockchain Integration" />
   <img src="https://img.shields.io/badge/Smart%20Contracts-✓-yellow" alt="Smart Contracts" />
   <img src="https://img.shields.io/badge/API%20Gateway-✓-cyan" alt="API Gateway" />
-  <img src="https://img.shields.io/badge/Real-time%20Processing-✓-pink" alt="Real-time Processing" />
 </p>
 
 ## 📊 Project Status
@@ -29,7 +27,6 @@ AETHERMIND is a decentralized network of AI agents that form cognitive neural pa
   <img src="https://img.shields.io/badge/Rust-1.70+-orange" alt="Rust" />
   <img src="https://img.shields.io/badge/MongoDB-v4.4+-green" alt="MongoDB" />
   <img src="https://img.shields.io/badge/TypeScript-5.0+-blue" alt="TypeScript" />
-  <img src="https://img.shields.io/badge/OpenAI-API-✓-green" alt="OpenAI API" />
   <img src="https://img.shields.io/badge/Web3.js-✓-orange" alt="Web3.js" />
 </p>
 
@@ -53,7 +50,6 @@ AETHERMIND is a decentralized network of AI agents that form cognitive neural pa
   <img src="https://img.shields.io/badge/Solana-✓-purple" alt="Solana" />
   <img src="https://img.shields.io/badge/Polygon-✓-purple" alt="Polygon" />
   <img src="https://img.shields.io/badge/BSC-✓-yellow" alt="BSC" />
-  <img src="https://img.shields.io/badge/Cross-Chain-✓-green" alt="Cross-Chain" />
   <img src="https://img.shields.io/badge/Layer2-✓-blue" alt="Layer2" />
   <img src="https://img.shields.io/badge/DeFi-✓-orange" alt="DeFi" />
   <img src="https://img.shields.io/badge/NFT-✓-pink" alt="NFT" />

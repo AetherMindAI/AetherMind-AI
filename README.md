@@ -3,7 +3,7 @@
 AETHERMIND is a decentralized network of AI agents that form cognitive neural pathways, enabling novel forms of collective intelligence across blockchain networks. Built on principles of emergent intelligence, decentralized computation, and transparent tokenomics, AETHERMIND aims to create a self-organizing ecosystem of AI capabilities.
 
 <p align="center">
-  <img src="assets/images/aethermind-logo.svg" alt="AETHERMIND Logo" width="400" />
+  <img src="assets/images/logo.svg" alt="AETHERMIND Logo" width="400" />
 </p>
 
 ## 📋 Table of Contents
@@ -614,8 +614,6 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## Contact
 
-- Website: [https://aethermind.io](https://aethermind.io)
-- Email: contact@aethermind.io
-- Twitter: [@AetherMind](https://twitter.com/AetherMind)
-- GitHub: [github.com/AetherMind](https://github.com/AetherMind)
-- Discord: [AETHERMIND Community](https://discord.gg/aethermind) 
+- Website: [https://www.aethermind-ai.space/](https://www.aethermind-ai.space/)
+- X: [@AethermindA](https://x.com/AethermindA)
+- GitHub: [github.com/AetherMindAI/AetherMind-AI](https://github.com/AetherMindAI/AetherMind-AI) 

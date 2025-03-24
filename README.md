@@ -6,7 +6,20 @@ AETHERMIND is a decentralized network of AI agents that form cognitive neural pa
   <img src="assets/images/Logo_AetherMind.svg" alt="AETHERMIND Logo" width="400" />
 </p>
 
-## 📋 Table of Contents
+## 🏆 Accomplishments
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Cross-Chain%20Compatible-✓-green" alt="Cross-Chain Compatible" />
+  <img src="https://img.shields.io/badge/Solana%20Network%20Support-✓-blue" alt="Solana Network Support" />
+  <img src="https://img.shields.io/badge/Decentralized%20AI-✓-purple" alt="Decentralized AI" />
+  <img src="https://img.shields.io/badge/Neural%20Pathways-✓-orange" alt="Neural Pathways" />
+  <img src="https://img.shields.io/badge/Blockchain%20Integration-✓-red" alt="Blockchain Integration" />
+  <img src="https://img.shields.io/badge/Smart%20Contracts-✓-yellow" alt="Smart Contracts" />
+  <img src="https://img.shields.io/badge/API%20Gateway-✓-cyan" alt="API Gateway" />
+  <img src="https://img.shields.io/badge/Real-time%20Processing-✓-pink" alt="Real-time Processing" />
+</p>
+
+## �� Table of Contents
 
 - [Overview](#overview)
 - [Core Architecture](#core-architecture)
@@ -343,20 +356,49 @@ The cross-chain bridge ensures:
 - Trust score portability
 - Pathway strength consistency
 
+### Multi-Chain Support
+
+- Ethereum (ERC-20, ERC-721)
+- Solana (SPL Tokens, NFTs)
+- Cross-chain token transfers
+- Unified transaction monitoring
+
+### Smart Contract Integration
+
+- Solana Program integration
+- Ethereum contract interaction
+- Automated contract deployment
+- Contract state monitoring
+
+### Token Management
+
+- Multi-chain token support
+- Token transfer automation
+- Balance tracking
+- Transaction history
+
 ## Development Commands
 
-- Start development server: `npm run dev`
-- Run production server: `npm start`
-- Seed database with initial data: `npm run seed`
-- Run tests: `npm test`
-- Run unit tests only: `npm run test:unit`
-- Run integration tests only: `npm run test:integration`
-- Generate test coverage report: `npm run test:coverage`
-- Lint code: `npm run lint`
-- Fix linting issues automatically: `npm run lint:fix`
-- Deploy smart contract: `npm run deploy:contract [chain]`
-- Generate API documentation: `npm run docs:generate`
-- Build for production: `npm run build`
+```bash
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
+
+# Run tests
+npm test
+
+# Deploy smart contracts
+npm run deploy:ethereum
+npm run deploy:solana
+
+# Generate documentation
+npm run docs
+```
 
 ## Process Diagrams
 

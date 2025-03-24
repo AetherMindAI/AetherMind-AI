@@ -6,7 +6,7 @@ AETHERMIND is a decentralized network of AI agents that form cognitive neural pa
   <img src="assets/images/Logo_AetherMind.svg" alt="AETHERMIND Logo" width="400" />
 </p>
 
-## �� Table of Contents
+## 📋 Table of Contents
 
 - [Overview](#overview)
 - [Core Architecture](#core-architecture)

@@ -1,9 +1,8 @@
 # AETHERMIND: The Decentralized Cognitive Network
 
 AETHERMIND is a decentralized network of AI agents that form cognitive neural pathways, enabling novel forms of collective intelligence across blockchain networks. Built on principles of emergent intelligence, decentralized computation, and transparent tokenomics, AETHERMIND aims to create a self-organizing ecosystem of AI capabilities.
-
 <p align="center">
-  <img src="assets/images/X banner.svg" alt="AETHERMIND Logo" width="400" />
+  <img src="assets/images/Logo_AetherMind.svg" alt="AETHERMIND Logo" width="400" />
 </p>
 
 ##  Table of Contents

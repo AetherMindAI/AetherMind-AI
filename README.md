@@ -6,56 +6,7 @@ AETHERMIND is a decentralized network of AI agents that form cognitive neural pa
   <img src="assets/images/Logo_AetherMind.svg" alt="AETHERMIND Logo" width="400" />
 </p>
 
-## 🏆 Accomplishments
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Solana%20Network%20Support-✓-blue" alt="Solana Network Support" />
-  <img src="https://img.shields.io/badge/Rust%20Language%20Support-✓-orange" alt="Rust Language Support" />
-  <img src="https://img.shields.io/badge/Decentralized%20AI-✓-purple" alt="Decentralized AI" />
-  <img src="https://img.shields.io/badge/Neural%20Pathways-✓-orange" alt="Neural Pathways" />
-  <img src="https://img.shields.io/badge/Blockchain%20Integration-✓-red" alt="Blockchain Integration" />
-  <img src="https://img.shields.io/badge/Smart%20Contracts-✓-yellow" alt="Smart Contracts" />
-  <img src="https://img.shields.io/badge/API%20Gateway-✓-cyan" alt="API Gateway" />
-</p>
-
-## 📊 Project Status
-
-<p align="center">
-  <img src="https://img.shields.io/badge/version-0.1.0-blue" alt="Version" />
-  <img src="https://img.shields.io/badge/license-MIT-green" alt="License" />
-  <img src="https://img.shields.io/badge/Node.js-v16+-green" alt="Node.js" />
-  <img src="https://img.shields.io/badge/Rust-1.70+-orange" alt="Rust" />
-  <img src="https://img.shields.io/badge/MongoDB-v4.4+-green" alt="MongoDB" />
-  <img src="https://img.shields.io/badge/TypeScript-5.0+-blue" alt="TypeScript" />
-  <img src="https://img.shields.io/badge/Web3.js-✓-orange" alt="Web3.js" />
-</p>
-
-## 🛠️ Development Status
-
-<p align="center">
-  <img src="https://img.shields.io/badge/build-passing-green" alt="Build Status" />
-  <img src="https://img.shields.io/badge/tests-passing-green" alt="Tests" />
-  <img src="https://img.shields.io/badge/coverage-95%25-green" alt="Coverage" />
-  <img src="https://img.shields.io/badge/code%20style-prettier-blue" alt="Code Style" />
-  <img src="https://img.shields.io/badge/security-A+-green" alt="Security" />
-  <img src="https://img.shields.io/badge/performance-A+-green" alt="Performance" />
-  <img src="https://img.shields.io/badge/accessibility-A+-green" alt="Accessibility" />
-  <img src="https://img.shields.io/badge/best%20practices-A+-green" alt="Best Practices" />
-</p>
-
-## 🌐 Network Support
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Ethereum-✓-blue" alt="Ethereum" />
-  <img src="https://img.shields.io/badge/Solana-✓-purple" alt="Solana" />
-  <img src="https://img.shields.io/badge/Polygon-✓-purple" alt="Polygon" />
-  <img src="https://img.shields.io/badge/BSC-✓-yellow" alt="BSC" />
-  <img src="https://img.shields.io/badge/Layer2-✓-blue" alt="Layer2" />
-  <img src="https://img.shields.io/badge/DeFi-✓-orange" alt="DeFi" />
-  <img src="https://img.shields.io/badge/NFT-✓-pink" alt="NFT" />
-</p>
-
-## �� Table of Contents
+##  Table of Contents
 
 - [Overview](#overview)
 - [Core Architecture](#core-architecture)
@@ -102,42 +53,45 @@ The platform leverages blockchain technology to create a permanent, transparent 
 aethermind/
 ├── contracts/              # Smart contracts
 │   ├── NeuralPathwayToken.sol  # NPT token contract
-│   ├── rust/              # Rust smart contracts
-│   │   ├── src/          # Rust source files
-│   │   │   ├── lib.rs    # Main library file
-│   │   │   ├── agent.rs  # Agent implementation
-│   │   │   └── pathway.rs # Neural pathway implementation
-│   │   └── Cargo.toml    # Rust dependencies
-│   └── abi/              # Contract ABIs
+│   └── abi/                # Contract ABIs
 ├── src/
-│   ├── api/              # API routes and controllers
-│   │   └── routes/       # Express route definitions
+│   ├── api/                # API routes and controllers
+│   │   └── routes/         # Express route definitions
 │   │       ├── agentRoutes.js     # Agent management endpoints
 │   │       ├── pathwayRoutes.js   # Neural pathway endpoints
 │   │       ├── tokenRoutes.js     # NPT token endpoints
 │   │       └── crossChainRoutes.js # Cross-chain operations
-│   ├── core/             # Core modules like Cognitive Mesh
+│   ├── core/               # Core modules like Cognitive Mesh
 │   │   ├── cognitiveMesh.js  # Main mesh implementation
 │   │   └── chainAdapter.js   # Blockchain adapter
-│   ├── models/           # Data models
-│   │   ├── agent.js      # Agent model
+│   ├── models/             # Data models
+│   │   ├── agent.js        # Agent model
 │   │   ├── neuralPathway.js # Neural pathway model
-│   │   └── schemas/      # Mongoose schemas
-│   ├── services/         # Business logic services
+│   │   └── schemas/        # Mongoose schemas
+│   │       ├── agentSchema.js      # Agent DB schema
+│   │       └── neuralPathwaySchema.js # Pathway DB schema
+│   ├── services/           # Business logic services
 │   │   ├── tokenService.js # Token management service
 │   │   ├── agentService.js # Agent management service
 │   │   └── meshService.js  # Cognitive mesh service
-│   └── utils/            # Utilities for logging, validation, etc.
-├── rust/                 # Rust components
-│   ├── core/            # Core Rust implementations
-│   │   ├── agent/       # Agent-related Rust code
-│   │   ├── pathway/     # Pathway-related Rust code
-│   │   └── blockchain/  # Blockchain integration
-│   ├── tests/           # Rust tests
-│   └── Cargo.toml       # Rust dependencies
-├── scripts/             # Utility scripts
-├── tests/               # Test files
-└── config/              # Configuration files
+│   └── utils/              # Utilities for logging, validation, etc.
+│       ├── blockchain.js   # Blockchain interaction utilities
+│       ├── errors.js       # Error handling framework
+│       ├── logger.js       # Logging framework
+│       ├── middleware.js   # Express middleware
+│       ├── database.js     # Database connection utilities
+│       └── validation.js   # Request validation utilities
+├── scripts/                # Utility scripts
+│   ├── seed.js             # Database seeding
+│   └── deployContract.js   # Contract deployment utility
+├── tests/                  # Test files
+│   ├── unit/               # Unit tests
+│   ├── integration/        # Integration tests
+│   └── e2e/                # End-to-end tests
+└── config/                 # Configuration files
+    ├── default.js          # Default configuration
+    ├── development.js      # Development environment config
+    └── production.js       # Production environment config
 ```
 
 ## Functional Modules
@@ -207,12 +161,9 @@ AETHERMIND is built around these core functional modules:
 
 ### Key Functional Features
 
-- **Rust Integration**: High-performance Rust components for critical path operations
-- **Rust Smart Contracts**: Solana program implementation in Rust
-- **Cross-Language Interop**: Seamless communication between JavaScript and Rust
 - **Decentralized Agent Registry**: A permissionless registry for AI agents with capabilities validation
 - **Dynamic Neural Pathways**: Connections between agents that strengthen or weaken based on usage patterns
-- **Cross-Chain Compatibility**: Deploy and manage agents across Ethereum, Polygon, BSC, and Solana
+- **Cross-Chain Compatibility**: Deploy and manage agents across Ethereum, Polygon, BSC, and other chains
 - **NFT Representation**: Neural pathways tokenized as NFTs, creating a market for agent connections
 - **Transparent Trust Metrics**: Agent trust scores calculated from their interactions and performance
 - **Capability Discovery**: Find agents with specific capabilities through semantic search
@@ -223,8 +174,6 @@ AETHERMIND is built around these core functional modules:
 
 ### Technical Highlights
 
-- **Rust Performance**: High-performance components written in Rust
-- **Rust Safety**: Memory safety and thread safety guarantees
 - **Modular Architecture**: Highly modular design enables flexible extension and deployment
 - **Security-First Design**: Comprehensive validation, authentication, and error handling
 - **Production-Ready Logging**: Structured logging for all system events and errors
@@ -256,7 +205,6 @@ cd aethermind
 2. Install dependencies:
 ```
 npm install
-cargo build
 ```
 
 3. Set up environment variables:
@@ -395,54 +343,20 @@ The cross-chain bridge ensures:
 - Trust score portability
 - Pathway strength consistency
 
-### Multi-Chain Support
-
-- Ethereum (ERC-20, ERC-721)
-- Solana (SPL Tokens, NFTs)
-- Cross-chain token transfers
-- Unified transaction monitoring
-
-### Smart Contract Integration
-
-- Solana Program integration
-- Ethereum contract interaction
-- Automated contract deployment
-- Contract state monitoring
-
-### Token Management
-
-- Multi-chain token support
-- Token transfer automation
-- Balance tracking
-- Transaction history
-
 ## Development Commands
 
-```bash
-# Install dependencies
-npm install
-cargo build
-
-# Start development server
-npm run dev
-
-# Build for production
-npm run build
-cargo build --release
-
-# Run tests
-npm test
-cargo test
-
-# Deploy smart contracts
-npm run deploy:ethereum
-npm run deploy:solana
-cargo run --bin deploy-rust-contracts
-
-# Generate documentation
-npm run docs
-cargo doc --no-deps --open
-```
+- Start development server: `npm run dev`
+- Run production server: `npm start`
+- Seed database with initial data: `npm run seed`
+- Run tests: `npm test`
+- Run unit tests only: `npm run test:unit`
+- Run integration tests only: `npm run test:integration`
+- Generate test coverage report: `npm run test:coverage`
+- Lint code: `npm run lint`
+- Fix linting issues automatically: `npm run lint:fix`
+- Deploy smart contract: `npm run deploy:contract [chain]`
+- Generate API documentation: `npm run docs:generate`
+- Build for production: `npm run build`
 
 ## Process Diagrams
 

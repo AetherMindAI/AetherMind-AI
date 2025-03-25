@@ -20,7 +20,7 @@ AETHERMIND is a decentralized network of AI agents that form cognitive neural pa
 
 </div>
 
-## �� Table of Contents
+## Table of Contents
 
 - [Overview](#overview)
 - [Core Architecture](#core-architecture)
@@ -65,47 +65,53 @@ The platform leverages blockchain technology to create a permanent, transparent 
 
 ```
 aethermind/
-├── contracts/              # Smart contracts
-│   ├── NeuralPathwayToken.sol  # NPT token contract
-│   └── abi/                # Contract ABIs
-├── src/
-│   ├── api/                # API routes and controllers
-│   │   └── routes/         # Express route definitions
-│   │       ├── agentRoutes.js     # Agent management endpoints
-│   │       ├── pathwayRoutes.js   # Neural pathway endpoints
-│   │       ├── tokenRoutes.js     # NPT token endpoints
-│   │       └── crossChainRoutes.js # Cross-chain operations
-│   ├── core/               # Core modules like Cognitive Mesh
-│   │   ├── cognitiveMesh.js  # Main mesh implementation
-│   │   └── chainAdapter.js   # Blockchain adapter
-│   ├── models/             # Data models
-│   │   ├── agent.js        # Agent model
-│   │   ├── neuralPathway.js # Neural pathway model
-│   │   └── schemas/        # Mongoose schemas
-│   │       ├── agentSchema.js      # Agent DB schema
-│   │       └── neuralPathwaySchema.js # Pathway DB schema
-│   ├── services/           # Business logic services
-│   │   ├── tokenService.js # Token management service
-│   │   ├── agentService.js # Agent management service
-│   │   └── meshService.js  # Cognitive mesh service
-│   └── utils/              # Utilities for logging, validation, etc.
-│       ├── blockchain.js   # Blockchain interaction utilities
-│       ├── errors.js       # Error handling framework
-│       ├── logger.js       # Logging framework
-│       ├── middleware.js   # Express middleware
-│       ├── database.js     # Database connection utilities
-│       └── validation.js   # Request validation utilities
-├── scripts/                # Utility scripts
-│   ├── seed.js             # Database seeding
-│   └── deployContract.js   # Contract deployment utility
-├── tests/                  # Test files
-│   ├── unit/               # Unit tests
-│   ├── integration/        # Integration tests
-│   └── e2e/                # End-to-end tests
-└── config/                 # Configuration files
-    ├── default.js          # Default configuration
-    ├── development.js      # Development environment config
-    └── production.js       # Production environment config
+├── programs/              # Solana programs (smart contracts)
+│   ├── neural_pathway/    # Neural pathway program
+│   │   ├── src/
+│   │   │   ├── lib.rs    # Program logic
+│   │   │   ├── state.rs  # Program state
+│   │   │   └── error.rs  # Custom errors
+│   │   └── Cargo.toml    # Dependencies
+│   └── token/            # NPT token program
+│       ├── src/
+│       │   ├── lib.rs    # Token program logic
+│       │   └── state.rs  # Token state
+│       └── Cargo.toml    # Dependencies
+├── app/
+│   ├── api/              # API routes and controllers
+│   │   └── routes/       # Express route definitions
+│   │       ├── agent.rs       # Agent management endpoints
+│   │       ├── pathway.rs     # Neural pathway endpoints
+│   │       ├── token.rs       # NPT token endpoints
+│   │       └── cross_chain.rs # Cross-chain operations
+│   ├── core/             # Core modules
+│   │   ├── cognitive_mesh.rs  # Main mesh implementation
+│   │   └── chain_adapter.rs   # Blockchain adapter
+│   ├── models/           # Data models
+│   │   ├── agent.rs      # Agent model
+│   │   ├── pathway.rs    # Neural pathway model
+│   │   └── schemas/      # Database schemas
+│   │       ├── agent.rs        # Agent DB schema
+│   │       └── pathway.rs      # Pathway DB schema
+│   ├── services/         # Business logic services
+│   │   ├── token.rs     # Token management service
+│   │   ├── agent.rs     # Agent management service
+│   │   └── mesh.rs      # Cognitive mesh service
+│   └── utils/            # Utilities
+│       ├── blockchain.rs # Blockchain interaction utilities
+│       ├── errors.rs     # Error handling
+│       ├── logger.rs     # Logging framework
+│       ├── middleware.rs # Express middleware
+│       ├── database.rs   # Database connection utilities
+│       └── validation.rs # Request validation utilities
+├── tests/               # Test files
+│   ├── unit/            # Unit tests
+│   ├── integration/     # Integration tests
+│   └── e2e/            # End-to-end tests
+├── scripts/            # Utility scripts
+│   ├── seed.rs         # Database seeding
+│   └── deploy.rs       # Program deployment utility
+└── Cargo.toml         # Project dependencies
 ```
 
 ## Functional Modules
@@ -203,30 +209,36 @@ AETHERMIND is built around these core functional modules:
 
 ### Prerequisites
 
+- Rust (latest stable)
+- Solana CLI tools
 - Node.js (v16+)
 - MongoDB (v4.4+)
-- Ethereum node access (Infura or local node)
 - Git
 
 ### Installation
 
 1. Clone the repository:
-```
+```bash
 git clone https://github.com/yourusername/aethermind.git
 cd aethermind
 ```
 
-2. Install dependencies:
+2. Install Rust dependencies:
+```bash
+cargo build
 ```
+
+3. Install Node.js dependencies:
+```bash
 npm install
 ```
 
-3. Set up environment variables:
-```
+4. Set up environment variables:
+```bash
 cp .env.example .env
 ```
-Edit the `.env` file to set your configuration values:
 
+Edit the `.env` file with your configuration:
 ```
 # Server Configuration
 PORT=3000
@@ -235,39 +247,29 @@ NODE_ENV=development
 # Database Configuration
 MONGODB_URI=mongodb://localhost:27017/aethermind
 
-# Blockchain Configuration
-ETH_RPC_URL=https://mainnet.infura.io/v3/your-infura-key
-POLYGON_RPC_URL=https://polygon-rpc.com
-BSC_RPC_URL=https://bsc-dataseed.binance.org
+# Solana Configuration
+SOLANA_RPC_URL=https://api.mainnet-beta.solana.com
+SOLANA_WALLET_PATH=/path/to/your/wallet.json
 
 # API Configuration
 API_KEY=your-api-key-here
 ENABLE_AUTH=false
 ```
 
-4. Seed the database with initial data:
-```
-npm run seed
-```
-
-5. Start the server:
-```
-npm run dev
+5. Build and deploy Solana programs:
+```bash
+solana program deploy target/deploy/neural_pathway.so
+solana program deploy target/deploy/token.so
 ```
 
-### Docker Deployment
+### Development Commands
 
-For containerized deployment:
-
-1. Build the Docker image:
-```
-docker build -t aethermind .
-```
-
-2. Run the container:
-```
-docker run -p 3000:3000 --env-file .env aethermind
-```
+- Build Solana programs: `cargo build-bpf`
+- Deploy programs: `cargo run-bpf`
+- Start development server: `npm run dev`
+- Run tests: `cargo test`
+- Run program tests: `cargo test-bpf`
+- Generate documentation: `cargo doc`
 
 ## API Documentation
 

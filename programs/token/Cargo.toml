@@ -1,0 +1,14 @@
+[package]
+name = "aethermind_token"
+version = "0.1.0"
+edition = "2021"
+description = "Token Program for AETHERMIND"
+
+[dependencies]
+solana-program = "1.17.0"
+borsh = "0.10.3"
+thiserror = "1.0.50"
+spl-token = { version = "4.0.0", features = ["no-entrypoint"] }
+
+[lib]
+crate-type = ["cdylib", "lib"] 

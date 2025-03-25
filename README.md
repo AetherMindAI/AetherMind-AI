@@ -6,33 +6,19 @@ AETHERMIND is a decentralized network of AI agents that form cognitive neural pa
   <img src="assets/images/Logo_AetherMind.svg" alt="AETHERMIND Logo" width="400" />
 </p>
 
-<p align="center">
-  <a href="https://github.com/AetherMindAI/AetherMind-AI/blob/master/LICENSE">
-    <img src="https://img.shields.io/github/license/AetherMindAI/AetherMind-AI?style=flat-square" alt="License">
-  </a>
-  <a href="https://github.com/AetherMindAI/AetherMind-AI/actions">
-    <img src="https://img.shields.io/github/actions/workflow/status/AetherMindAI/AetherMind-AI/main.yml?style=flat-square" alt="Build Status">
-  </a>
-  <a href="https://github.com/AetherMindAI/AetherMind-AI/releases">
-    <img src="https://img.shields.io/github/v/release/AetherMindAI/AetherMind-AI?style=flat-square" alt="Latest Release">
-  </a>
-  <a href="https://solana.com">
-    <img src="https://img.shields.io/badge/Solana-Network-blue?style=flat-square&logo=solana" alt="Solana Network">
-  </a>
-  <br>
-  <a href="https://github.com/AetherMindAI/AetherMind-AI/graphs/contributors">
-    <img src="https://img.shields.io/github/contributors/AetherMindAI/AetherMind-AI?style=flat-square" alt="Contributors">
-  </a>
-  <a href="https://github.com/AetherMindAI/AetherMind-AI/commits/master">
-    <img src="https://img.shields.io/github/last-commit/AetherMindAI/AetherMind-AI?style=flat-square" alt="Last Commit">
-  </a>
-  <a href="https://github.com/AetherMindAI/AetherMind-AI/issues">
-    <img src="https://img.shields.io/github/issues/AetherMindAI/AetherMind-AI?style=flat-square" alt="Issues">
-  </a>
-  <a href="https://github.com/AetherMindAI/AetherMind-AI/pulls">
-    <img src="https://img.shields.io/github/issues-pr/AetherMindAI/AetherMind-AI?style=flat-square" alt="Pull Requests">
-  </a>
-</p>
+<div align="center">
+
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Solana](https://img.shields.io/badge/Solana-Compatible-84cc16.svg?style=flat&logo=solana)](https://solana.com)
+[![Version](https://img.shields.io/badge/version-0.1.0-green.svg)](https://github.com/AetherMindAI/AetherMind-AI/releases)
+[![Status](https://img.shields.io/badge/status-active-success.svg)](https://github.com/AetherMindAI/AetherMind-AI)
+
+[![Stars](https://img.shields.io/github/stars/AetherMindAI/AetherMind-AI?style=social)](https://github.com/AetherMindAI/AetherMind-AI/stargazers)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/AetherMindAI/AetherMind-AI/pulls)
+[![Contributors](https://img.shields.io/github/contributors/AetherMindAI/AetherMind-AI?color=dark-green)](https://github.com/AetherMindAI/AetherMind-AI/graphs/contributors)
+[![Last Commit](https://img.shields.io/github/last-commit/AetherMindAI/AetherMind-AI)](https://github.com/AetherMindAI/AetherMind-AI/commits/master)
+
+</div>
 
 ## �� Table of Contents
 

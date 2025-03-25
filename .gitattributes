@@ -1,0 +1,13 @@
+*.rs linguist-language=Rust
+*.toml linguist-language=Rust
+Cargo.toml linguist-language=Rust
+Cargo.lock linguist-language=Rust
+
+# Mark JavaScript files as vendored to reduce their impact on language stats
+*.js linguist-vendored
+*.jsx linguist-vendored
+*.ts linguist-vendored
+*.tsx linguist-vendored
+
+# Mark Solidity files as vendored
+*.sol linguist-vendored 
